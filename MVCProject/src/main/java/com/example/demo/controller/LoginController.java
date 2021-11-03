@@ -22,7 +22,7 @@ public class LoginController {
 	}
 	@RequestMapping(value="/logpost",method=RequestMethod.POST)
 	public ModelAndView logpost(logmodel m) {
-		;
+	
 
 		ModelAndView mv=new ModelAndView();
 		mv.addObject("m1",registerService.validateUser(m));
